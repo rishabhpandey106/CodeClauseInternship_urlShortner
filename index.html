@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Shortener</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007acc;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #007acc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #007acc;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    #shortenedUrl {
+      display: none;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #e6f7ff;
+    }
+
+    #shortenedUrl a {
+      color: #007acc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>URL Shortener</h1>
+  </header>
+  <main>
+    <label for="urlInput">Enter URL to Shorten:</label>
+    <input type="text" id="urlInput" placeholder="Enter URL">
+    <button id="shortenButton">Shorten</button>
+    <div id="shortenedUrl" style="display: none;">
+        <label>Shortened URL:</label>
+        <a id="shortUrlLink" target="_blank"></a>
+    </div>
+  </main>
+  <footer>
+    Developed by Rshabh Kumar Pandey
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
